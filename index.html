@@ -9,6 +9,26 @@
 
 <h4>All features on this page are AI-powered and developed by me :)</h4>
 
+
+
+<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+
+<div id="webchat" role="main"></div>
+
+<script>
+  window.WebChat.renderWebChat({
+    directLine: window.WebChat.createDirectLine({
+      secret: 'YOUR_DIRECT_LINE_SECRET'
+    })
+  }, document.getElementById('webchat'));
+</script>
+
+<style>
+  html, body { height: 100%; margin: 0; }
+  #webchat { height: 100vh; width: 100%; }
+</style>
+
+
 </body>
 </html>
 
